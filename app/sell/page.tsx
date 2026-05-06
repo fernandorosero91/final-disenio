@@ -4,9 +4,10 @@ export const metadata = {
 
 export default function SellPage() {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 py-12">
-      <div className="bg-white rounded-lg p-12">
-        <h1 className="text-3xl font-semibold mb-6 text-center">Vende en Mercado Libre</h1>
+    <div className="min-h-[calc(100vh-200px)] bg-[#ededed] py-12">
+      <div className="max-w-[1200px] mx-auto px-4">
+        <div className="bg-white rounded-lg p-12">
+          <h1 className="text-3xl font-semibold mb-6 text-center">Vende en Mercado Libre</h1>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="text-center">
@@ -50,9 +51,10 @@ export default function SellPage() {
         </div>
 
         <div className="text-center">
-          <button className="px-8 py-3 bg-[var(--color-header-blue)] text-white rounded-md font-semibold hover:bg-[var(--color-button-hover-blue)] transition-colors">
+          <button className="px-8 py-3 bg-[#3483fa] text-white rounded-md font-semibold hover:bg-[#2968c8] transition-colors">
             Comenzar a vender
           </button>
+        </div>
         </div>
       </div>
     </div>

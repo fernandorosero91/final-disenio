@@ -119,7 +119,7 @@ function SearchResults({ searchParams }: { searchParams: { q?: string } }) {
           </div>
 
           {/* Results Header */}
-          <h1 className="text-2xl mb-4">
+          <h1 className="text-2xl mb-4 text-center">
             {resultCount.toLocaleString('es-AR')} resultados para{' '}
             <span className="font-semibold">'{query}'</span>
           </h1>

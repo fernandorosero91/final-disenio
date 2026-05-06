@@ -8,13 +8,17 @@ interface ProductRowProps {
 
 export function ProductRow({ title, products }: ProductRowProps) {
   return (
-    <div className="bg-white rounded-md p-6 mb-8">
-      <h2 className="text-[24px] font-normal text-[#333] mb-6">{title}</h2>
+    <div className="w-full mb-6">
+      <div className="bg-white rounded-lg p-6 shadow-sm">
+        <h2 className="text-xl font-semibold text-[#333] mb-6">{title}</h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+        <div className="flex flex-wrap justify-center gap-4 max-w-[1300px] mx-auto">
+          {products.map((product) => (
+            <div key={product.id} className="w-[230px]">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

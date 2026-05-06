@@ -6,9 +6,10 @@ export const metadata = {
 
 export default function RegisterPage() {
   return (
-    <div className="max-w-md mx-auto px-4 py-12">
-      <div className="bg-white rounded-lg p-8 shadow-[var(--shadow-card)]">
-        <h1 className="text-2xl font-semibold mb-6 text-center">Crea tu cuenta</h1>
+    <div className="min-h-[calc(100vh-200px)] bg-[#ededed] py-12 flex items-center justify-center">
+      <div className="max-w-md w-full mx-auto px-4">
+        <div className="bg-white rounded-lg p-8 shadow-sm">
+          <h1 className="text-2xl font-semibold mb-6 text-center">Crea tu cuenta</h1>
         
         <form className="space-y-4">
           <div>
@@ -47,9 +48,10 @@ export default function RegisterPage() {
         </form>
         
         <div className="mt-6 text-center">
-          <Link href="/login" className="text-sm text-[var(--color-header-blue)] hover:underline">
+          <Link href="/login" className="text-sm text-[#3483fa] hover:underline">
             ¿Ya tenés cuenta? Ingresá
           </Link>
+        </div>
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@ import { mockProducts } from "@/lib/data/products";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#ededed]">
-      <div className="w-full max-w-[1200px] mx-auto px-4 py-8">
+    <div className="w-full bg-[#ededed] min-h-screen">
+      <div className="w-full max-w-[1400px] mx-auto px-6 py-6">
         <HeroBanner />
         <CategoryGrid />
         <ProductRow title="Ofertas del día" products={mockProducts.slice(0, 5)} />

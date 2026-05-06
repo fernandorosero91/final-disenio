@@ -4,8 +4,9 @@ export const metadata = {
 
 export default function PurchasesPage() {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 py-12">
-      <div className="bg-white rounded-lg p-12 text-center">
+    <div className="min-h-[calc(100vh-200px)] bg-[#ededed] flex items-center justify-center">
+      <div className="max-w-[1200px] w-full mx-auto px-4 py-12">
+        <div className="bg-white rounded-lg p-12 text-center">
         <svg
           className="mx-auto mb-6 text-gray-300"
           width="80"
@@ -25,10 +26,11 @@ export default function PurchasesPage() {
         </p>
         <a
           href="/"
-          className="inline-block px-6 py-3 bg-[var(--color-header-blue)] text-white rounded-md font-semibold hover:bg-[var(--color-button-hover-blue)] transition-colors"
+          className="inline-block px-6 py-3 bg-[#3483fa] text-white rounded-md font-semibold hover:bg-[#2968c8] transition-colors"
         >
           Descubrir productos
         </a>
+        </div>
       </div>
     </div>
   );

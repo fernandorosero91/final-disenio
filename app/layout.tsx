@@ -7,11 +7,6 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Mercado Libre Colombia - Envíos Gratis en el día",
   description: "Comprá productos con Envío Gratis en el día en Mercado Libre Colombia. Encontrá miles de marcas y productos a precios increíbles.",
-  openGraph: {
-    title: "Mercado Libre Colombia",
-    description: "Envíos Gratis en el día",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
@@ -21,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body className="m-0 p-0">
         <Header />
         <NavigationBar />
-        <main>
+        <main className="w-full">
           {children}
         </main>
         <Footer />
