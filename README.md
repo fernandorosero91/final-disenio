@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Marketplace - Next.js 14 App
 
-## Getting Started
+A complete, pixel-perfect e-commerce marketplace application built with Next.js 14 App Router, TypeScript, and Tailwind CSS. This project demonstrates modern web development practices with a focus on performance, accessibility, and user experience.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Stack**: Next.js 14 with App Router, TypeScript, Tailwind CSS
+- **Server Components**: Optimized performance with React Server Components
+- **Responsive Design**: Mobile-first approach with breakpoints for all devices
+- **Interactive UI**: Client components for dynamic features (carousel, cart, search)
+- **Product Management**: Browse, search, filter, and view detailed product pages
+- **Shopping Cart**: Add to cart functionality with quantity management
+- **Image Gallery**: Zoom-enabled product image viewer with thumbnails
+- **Real-time Features**: Countdown timers, live search autocomplete
+- **Accessibility**: Semantic HTML, ARIA labels, keyboard navigation
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── layout.tsx              # Root layout with header/footer
+│   ├── page.tsx                # Homepage
+│   ├── search/page.tsx         # Search results with filters
+│   ├── category/[slug]/        # Category listing pages
+│   ├── product/[id]/           # Product detail pages
+│   ├── cart/page.tsx           # Shopping cart
+│   ├── login/page.tsx          # Login page
+│   ├── register/page.tsx       # Registration page
+│   └── purchases/page.tsx      # Purchase history
+├── components/
+│   ├── layout/                 # Header, Navigation, Footer
+│   ├── home/                   # Homepage components
+│   ├── product/                # Product cards, grids, gallery
+│   └── ui/                     # Reusable UI components
+├── lib/
+│   ├── data/                   # Mock data (products, categories)
+│   ├── hooks/                  # Custom React hooks
+│   ├── types/                  # TypeScript interfaces
+│   └── utils.ts                # Utility functions
+└── public/                     # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Colors
+- Primary Yellow: `#FFE600`
+- Header Blue: `#3483FA`
+- Success Green: `#00A650`
+- Text Primary: `#333333`
+- Background: `#EDEDEE`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Typography
+- Font: "Proxima Nova", Arial, sans-serif
+- Base size: 14px
+- Headings: 20-24px, weight 600
 
-## Learn More
+### Components
+- Cards with hover effects and shadows
+- Rounded corners (4-8px)
+- Consistent spacing and padding
+- Smooth transitions (200ms)
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+```bash
+# Install dependencies
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Run development server
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px (2 columns)
+- **Tablet**: 768px - 1024px (3 columns)
+- **Desktop**: > 1024px (4-5 columns)
+
+## 🔑 Key Pages
+
+### Homepage (`/`)
+- Hero carousel with auto-advance
+- Category grid with icons
+- Flash deals with countdown timer
+- Product rows with horizontal scroll
+- Loyalty program banner
+
+### Search Results (`/search`)
+- Advanced filtering sidebar
+- Sort options
+- Grid/list view toggle
+- Pagination
+
+### Product Detail (`/product/[id]`)
+- Image gallery with zoom
+- Price and installment options
+- Quantity selector
+- Shipping calculator
+- Seller information
+
+### Category Pages (`/category/[slug]`)
+- Category-specific product listings
+- Sort and filter options
+
+## 🧩 Components
+
+### Layout Components
+- `Header`: Sticky header with search and navigation
+- `NavigationBar`: Category navigation
+- `Footer`: Multi-column footer with links
+
+### Product Components
+- `ProductCard`: Reusable product card with add-to-cart
+- `ProductGrid`: Responsive grid layout
+- `ImageGallery`: Zoom-enabled image viewer
+- `ShippingWidget`: Delivery calculator
+
+### UI Components
+- `Button`: Multiple variants (primary, outlined, ghost)
+- `Badge`: Discount, shipping, stock badges
+- `StarRating`: Visual rating display
+- `PriceDisplay`: Formatted price with currency
+- `CountdownTimer`: Live countdown
+
+### Home Components
+- `HeroCarousel`: Auto-sliding banner carousel
+- `CategoryGrid`: Icon-based category navigation
+- `FlashDeals`: Time-limited offers section
+- `ProductRow`: Horizontal scrolling products
+- `LoyaltyBanner`: Rewards program promotion
+
+## 🎯 Custom Hooks
+
+- `useCountdown`: Live countdown timer
+- `useCarousel`: Carousel state management with auto-advance
+
+## 📊 Data Management
+
+Mock data is provided in `lib/data/`:
+- 8 sample products with complete details
+- 12 product categories
+- Realistic pricing and ratings
+
+## 🔧 Configuration
+
+### TypeScript
+- Strict mode enabled
+- Path aliases configured (`@/*`)
+- Type-safe throughout
+
+### Tailwind CSS
+- Custom CSS variables for design tokens
+- Utility classes for rapid development
+- Responsive utilities
+
+## 🚀 Performance Optimizations
+
+- Server Components by default
+- Client Components only where needed
+- Next.js Image optimization
+- Code splitting and lazy loading
+- Optimized fonts and assets
+
+## 📝 License
+
+This project is for educational and demonstration purposes.
+
+## 🤝 Contributing
+
+This is a demonstration project. Feel free to fork and customize for your needs.
