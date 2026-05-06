@@ -20,64 +20,66 @@ export function Footer() {
 
   return (
     <footer className="bg-[#333] text-white mt-12 w-full">
-      <div className="max-w-[1400px] mx-auto px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Column 1 */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4">Sobre Mercado Libre</h3>
-            <ul className="space-y-2">
-              {column1Links.map((link, i) => (
-                <li key={i}>
-                  <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="w-full px-8 flex justify-center">
+        <div className="w-full max-w-[1400px] py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Column 1 */}
+            <div>
+              <h3 className="text-sm font-semibold mb-4">Sobre Mercado Libre</h3>
+              <ul className="space-y-2">
+                {column1Links.map((link, i) => (
+                  <li key={i}>
+                    <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
+                      {link}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Column 2 */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4">Más información</h3>
-            <ul className="space-y-2">
-              {column2Links.map((link, i) => (
-                <li key={i}>
-                  <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Column 2 */}
+            <div>
+              <h3 className="text-sm font-semibold mb-4">Más información</h3>
+              <ul className="space-y-2">
+                {column2Links.map((link, i) => (
+                  <li key={i}>
+                    <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
+                      {link}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Column 3 - Social */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4">Redes sociales</h3>
-            <div className="flex gap-3">
-              {['Facebook', 'Twitter', 'Instagram', 'YouTube', 'LinkedIn'].map((social, i) => (
-                <Link
-                  key={i}
-                  href="#"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#fff159] transition-colors"
-                  aria-label={social}
-                >
-                  <span className="text-xs">{social[0]}</span>
-                </Link>
-              ))}
+            {/* Column 3 - Social */}
+            <div>
+              <h3 className="text-sm font-semibold mb-4">Redes sociales</h3>
+              <div className="flex gap-3">
+                {['Facebook', 'Twitter', 'Instagram', 'YouTube', 'LinkedIn'].map((social, i) => (
+                  <Link
+                    key={i}
+                    href="#"
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#fff159] transition-colors"
+                    aria-label={social}
+                  >
+                    <span className="text-xs">{social[0]}</span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-700 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-gray-400">
-              Copyright © 1999-2025 MercadoLibre S.R.L.
-            </p>
-            <div className="flex gap-4 text-xs text-gray-400">
-              <Link href="#" className="hover:text-white">Seguridad</Link>
-              <Link href="#" className="hover:text-white">Privacidad</Link>
-              <Link href="#" className="hover:text-white">Empresas del grupo</Link>
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-700 pt-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-xs text-gray-400">
+                Copyright © 1999-2025 MercadoLibre S.R.L.
+              </p>
+              <div className="flex gap-4 text-xs text-gray-400">
+                <Link href="#" className="hover:text-white">Seguridad</Link>
+                <Link href="#" className="hover:text-white">Privacidad</Link>
+                <Link href="#" className="hover:text-white">Empresas del grupo</Link>
+              </div>
             </div>
           </div>
         </div>

@@ -8,7 +8,6 @@
 
 html {
   overflow-y: scroll;
-  width: 100vw;
 }
 
 body {
@@ -18,8 +17,6 @@ body {
   background-color: #ededed;
   line-height: 1.35;
   -webkit-font-smoothing: antialiased;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 a {

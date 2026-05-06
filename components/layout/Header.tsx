@@ -9,8 +9,8 @@ export function Header() {
   return (
     <header className="w-full bg-[#fff159]">
       {/* Main header */}
-      <div className="w-full">
-        <div className="max-w-[1400px] mx-auto px-8 h-14 flex items-center gap-4">
+      <div className="w-full px-8 flex justify-center">
+        <div className="w-full max-w-[1400px] h-14 flex items-center gap-4">
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <span className="text-[#333] font-semibold text-xl">mercado libre</span>
@@ -50,36 +50,38 @@ export function Header() {
 
       {/* Navigation */}
       <div className="w-full bg-white border-t border-gray-200">
-        <div className="max-w-[1400px] mx-auto px-8 h-10 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-5">
-            <button className="flex items-center gap-1.5 text-[#666] hover:text-[#3483fa] transition-colors">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="3" y1="12" x2="21" y2="12"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <line x1="3" y1="18" x2="21" y2="18"/>
-              </svg>
-              Categorías
-            </button>
-            <Link href="/deals" className="text-[#666] hover:text-[#3483fa] transition-colors">Ofertas</Link>
-            <Link href="/history" className="text-[#666] hover:text-[#3483fa] transition-colors">Historial</Link>
-            <Link href="/supermarket" className="text-[#666] hover:text-[#3483fa] transition-colors">Supermercado</Link>
-            <Link href="/fashion" className="text-[#666] hover:text-[#3483fa] transition-colors">Moda</Link>
-            <Link href="/sell" className="text-[#666] hover:text-[#3483fa] transition-colors">Vender</Link>
-            <Link href="/help" className="text-[#666] hover:text-[#3483fa] transition-colors">Ayuda</Link>
-          </div>
+        <div className="w-full px-8 flex justify-center">
+          <div className="w-full max-w-[1400px] h-10 flex items-center justify-between text-xs">
+            <div className="flex items-center gap-5">
+              <button className="flex items-center gap-1.5 text-[#666] hover:text-[#3483fa] transition-colors">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="3" y1="12" x2="21" y2="12"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+                Categorías
+              </button>
+              <Link href="/deals" className="text-[#666] hover:text-[#3483fa] transition-colors">Ofertas</Link>
+              <Link href="/history" className="text-[#666] hover:text-[#3483fa] transition-colors">Historial</Link>
+              <Link href="/supermarket" className="text-[#666] hover:text-[#3483fa] transition-colors">Supermercado</Link>
+              <Link href="/fashion" className="text-[#666] hover:text-[#3483fa] transition-colors">Moda</Link>
+              <Link href="/sell" className="text-[#666] hover:text-[#3483fa] transition-colors">Vender</Link>
+              <Link href="/help" className="text-[#666] hover:text-[#3483fa] transition-colors">Ayuda</Link>
+            </div>
 
-          <div className="flex items-center gap-5">
-            <Link href="/register" className="text-[#666] hover:text-[#3483fa] transition-colors">Crea tu cuenta</Link>
-            <Link href="/login" className="text-[#666] hover:text-[#3483fa] transition-colors">Ingresa</Link>
-            <Link href="/purchases" className="text-[#666] hover:text-[#3483fa] transition-colors">Mis compras</Link>
-            <Link href="/cart" className="relative">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2" className="hover:stroke-[#3483fa] transition-colors">
-                <circle cx="9" cy="21" r="1"/>
-                <circle cx="20" cy="21" r="1"/>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-              </svg>
-              <span className="absolute -top-1 -right-1 bg-[#3483fa] text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">2</span>
-            </Link>
+            <div className="flex items-center gap-5">
+              <Link href="/register" className="text-[#666] hover:text-[#3483fa] transition-colors">Crea tu cuenta</Link>
+              <Link href="/login" className="text-[#666] hover:text-[#3483fa] transition-colors">Ingresa</Link>
+              <Link href="/purchases" className="text-[#666] hover:text-[#3483fa] transition-colors">Mis compras</Link>
+              <Link href="/cart" className="relative">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2" className="hover:stroke-[#3483fa] transition-colors">
+                  <circle cx="9" cy="21" r="1"/>
+                  <circle cx="20" cy="21" r="1"/>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                </svg>
+                <span className="absolute -top-1 -right-1 bg-[#3483fa] text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">2</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
