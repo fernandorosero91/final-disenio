@@ -7,9 +7,9 @@ interface ProductGridProps {
 
 export function ProductGrid({ products }: ProductGridProps) {
   return (
-    <div className="flex flex-wrap justify-center gap-4 max-w-[1300px] mx-auto">
+    <div className="flex flex-wrap justify-center gap-5 max-w-[1350px] mx-auto">
       {products.map((product) => (
-        <div key={product.id} className="w-[230px]">
+        <div key={product.id} className="w-[245px]">
           <ProductCard product={product} />
         </div>
       ))}
