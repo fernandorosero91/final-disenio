@@ -19,8 +19,8 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[var(--color-text-primary)] text-white mt-12">
-      <div className="max-w-[1200px] mx-auto px-10 py-8">
+    <footer className="bg-[#333] text-white mt-12 w-full">
+      <div className="max-w-[1400px] mx-auto px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Column 1 */}
           <div>
@@ -28,7 +28,7 @@ export function Footer() {
             <ul className="space-y-2">
               {column1Links.map((link, i) => (
                 <li key={i}>
-                  <Link href="#" className="text-xs text-gray-300 hover:text-[var(--color-primary-yellow)] transition-colors">
+                  <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
                     {link}
                   </Link>
                 </li>
@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="space-y-2">
               {column2Links.map((link, i) => (
                 <li key={i}>
-                  <Link href="#" className="text-xs text-gray-300 hover:text-[var(--color-primary-yellow)] transition-colors">
+                  <Link href="#" className="text-xs text-gray-300 hover:text-[#fff159] transition-colors">
                     {link}
                   </Link>
                 </li>
@@ -58,7 +58,7 @@ export function Footer() {
                 <Link
                   key={i}
                   href="#"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[var(--color-primary-yellow)] transition-colors"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#fff159] transition-colors"
                   aria-label={social}
                 >
                   <span className="text-xs">{social[0]}</span>

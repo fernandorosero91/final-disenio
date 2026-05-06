@@ -16,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="m-0 p-0">
+      <body className="m-0 p-0 overflow-x-hidden">
         <Header />
         <NavigationBar />
-        <main className="w-full">
+        <main className="w-full overflow-x-hidden">
           {children}
         </main>
         <Footer />

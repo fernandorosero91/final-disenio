@@ -10,7 +10,7 @@ export function Header() {
     <header className="w-full bg-[#fff159]">
       {/* Main header */}
       <div className="w-full">
-        <div className="container mx-auto max-w-[1200px] px-4 h-14 flex items-center gap-4">
+        <div className="max-w-[1400px] mx-auto px-8 h-14 flex items-center gap-4">
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <span className="text-[#333] font-semibold text-xl">mercado libre</span>
@@ -50,7 +50,7 @@ export function Header() {
 
       {/* Navigation */}
       <div className="w-full bg-white border-t border-gray-200">
-        <div className="container mx-auto max-w-[1200px] px-4 h-10 flex items-center justify-between text-xs">
+        <div className="max-w-[1400px] mx-auto px-8 h-10 flex items-center justify-between text-xs">
           <div className="flex items-center gap-5">
             <button className="flex items-center gap-1.5 text-[#666] hover:text-[#3483fa] transition-colors">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
